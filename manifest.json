@@ -1,0 +1,16 @@
+{
+    "name": "limit-anonymous-resources",
+    "description": "Limit anonymous user access to repositories containing 'local' (except c1)",
+    "filterCriteria": {
+        "artifactFilterCriteria": {
+            "repoKeys": ["test-local-repo", "c1", "test-remote-repo"]
+        }
+    },
+    "secrets": {},
+    "sourceCodePath": "./worker.ts",
+    "action": "BEFORE_DOWNLOAD_REQUEST",
+    "enabled": true,
+    "debug": true,
+    "projectKey": "",
+    "application": "artifactory"
+}
